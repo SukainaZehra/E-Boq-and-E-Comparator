@@ -1,0 +1,715 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ body {
+    margin: 10px;
+    font-family: Arial; 
+  }
+
+  .loader {
+	border: 16px solid #f3f3f393;
+	border-radius: 50%;
+	border-top: 16px solid #217ab6;
+	position: fixed;
+	right: 45vw;
+	top: 45vh;
+	width: 170px;
+	height: 170px;
+	
+	-webkit-animation: spin 2s linear infinite; /* Safari */
+	animation: spin 2s linear infinite;
+  }
+  
+  /* Safari */
+  @-webkit-keyframes spin {
+	0% { -webkit-transform: rotate(0deg); }
+	100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+  }
+
+  table{
+    border-collapse:collapse;
+    }
+
+    td{	
+	padding:0px;
+	color:black;
+	font-size:11.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	border:none;
+
+	}
+
+    /*for thead*/
+    .xl137{	
+	font-size:10.0pt;
+	font-family:"Times New Roman", serif;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;
+}
+.xl138{	
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+.xl139
+	{
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	text-align:right;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:none;}
+    .xl146
+	{
+		
+	font-family:"Arial Black", sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:1.0pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;}
+    .xl148
+	{
+		
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:1.0pt solid windowtext;
+	white-space:normal;}
+.xl149
+	{
+		
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+    .xl160
+	{
+		
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+    .xl190
+	{
+	color:black;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	text-align:left;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid black;
+	border-left:none;}
+    .xl191
+	{
+		
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;}
+    .xl192
+	{
+		
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:1.0pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+
+    /*for tbdoy*/
+
+	/*Row 1 and 9*/
+    .r1, .r9{
+        height:27.0pt;	
+    }
+
+	.r1 > td,
+	.r9 > td{
+		border:1.0pt solid black; /*all columns of row1 will get borders*/
+	}
+
+	.r1>.c1,
+	.r9>.c1{
+		width:3%;
+	}
+
+	.r1>.c2,
+	.r9>.c2{
+		width:25%;
+	}
+
+	.r1>.c3,
+	.r9>.c3{
+		width:3%;
+	}
+
+	.r1>.c4,
+	.r9>.c4{
+		width:6%; 
+	}
+
+	/*c5 c6 and c7 are colspan=2; not specifiying their widths*/
+
+	.r1> .c1,
+    .r1> .c2,
+    .r1> .c3,
+	.r1> .c4,
+	.r9>.c1,
+	.r9>.c2,
+	.r9>.c3,
+	.r9>.c4{	
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	text-align:center;
+	vertical-align:middle;
+	white-space:normal;
+    }
+
+    .r1>.c5,
+    .r1>.c6,
+    .r1>.c7,
+	.r9>.c5,
+	.r9>.c6,
+	.r9>.c7{		
+	font-family:"Arial Black", sans-serif; /*last 3 col of row 1 have thick heading*/
+	text-align:center;
+	vertical-align:middle;
+    }
+
+	/*Row 2*/
+    .r2, .r10{
+        height:30.0pt;
+    }
+	.r2>td,
+	.r10>td{
+		border:1.0pt solid black; /*all columns of row2 will get borders*/
+		border-top:none;
+		color:black;
+		font-size:10.0pt;
+		font-weight:700;
+		font-family:Arial, sans-serif;
+		text-align:center;
+		vertical-align:middle;
+		white-space:normal;
+	}
+
+	.r2>.c1, 
+	.r2>.c3,
+	.r2>.c5,
+	.r10>.c1,
+	.r10>.c3,
+	.r10>.c5
+	{
+		width: 8%;
+	}
+
+	.r2>.c2, 
+	.r2>.c4,
+	.r2>.c6,
+	.r10>.c2,
+	.r10>.c4,
+	.r10>.c6{
+		width: 13%;
+	}
+
+	/*Row 3*/
+	/*Row 11*/
+	/*Row 17*/
+	/*Row 23*/
+	.r3, .r11, .r17, .r23{
+        height:27.0pt;	
+		background: #8eaadb;
+    }
+
+	.r3 > td,
+	.r11 > td,
+	.r17>td,
+	.r23>td{
+		border:1.0pt solid black; /*all columns of row1 will get borders*/
+		color: white;
+	}
+
+	.r3>.c1,
+	.r11>.c1,
+	.r17>.c1,
+	.r23>.c1{
+		width:3%;
+	}
+
+	.r3>.c2,
+	.r11>.c2,
+	.r17>.c2,
+	.r23>.c2{
+		width:25%;
+	}
+
+	.r3>.c3,
+	.r11>.c3,
+	.r17>.c3,
+	.r23>.c3{
+		width:3%;
+	}
+
+	.r3>.c4,
+	.r11>.c4,
+	.r17>.c4,
+	.r23>.c4{
+		width:6%; 
+	}
+
+	.r3>.c5, 
+	.r3>.c7,
+	.r3>.c9,
+	.r11>.c5,
+	.r11>.c7,
+	.r11>.c9,
+	.r17>.c5,
+	.r17>.c7,
+	.r17>.c9,
+	.r23>.c5,
+	.r23>.c7,
+	.r23>.c9{
+		width: 8%;
+	}
+
+	.r3>.c6, 
+	.r3>.c8,
+	.r3>.c10,
+	.r11>.c6,
+	.r11>.c8,
+	.r11>.c10,
+	.r17>.c6,
+	.r17>.c8,
+	.r17>.c10,
+	.r23>.c6,
+	.r23>.c8,
+	.r23>.c10{
+		width: 13%;
+	}
+
+	.r3> .c1,
+    .r3> .c2,
+	.r11>.c1,
+	.r11>.c2,
+	.r17>.c1,
+	.r17>.c2,
+	.r23>.c1,
+	.r23>.c2
+ {
+	font-size:10.0pt;
+	font-family:Arial, sans-serif;
+	text-align:left;
+	vertical-align:middle;
+	white-space:normal;
+    }
+
+	/*Row 4*/
+	.r4
+	{
+        height: 100px;
+    }
+
+.r12,.r12b{
+	height: 50px;
+}
+	.r4 > td,
+	.r12>td,
+	.r12b>td{
+		border:1.0pt solid black; /*all columns of row1 will get borders*/
+		padding: 10px 5px 10px 5px;
+	}
+
+	.r4>.c1,
+	.r12>.c1,
+	.r12b>.c1{
+		width:3%;
+	}
+	.r4>.c2,
+	.r12>.c2,
+	.r12b>.c2{
+		width:25%;
+	}
+	.r4>.c3,
+	.r12>.c3,
+	.r12b>.c3{
+		width:3%;
+	}
+	.r4>.c4,
+	.r12>.c4,
+	.r12b>.c4{
+		width:6%; 
+	}
+	.r4>.c5, 
+	.r4>.c7,
+	.r4>.c9,
+	.r12>.c5,
+	.r12>.c7,
+	.r12>.c9,
+	.r12b>.c5,
+	.r12b>.c7,
+	.r12b>.c9{
+		width: 8%;
+	}
+	.r4>.c6, 
+	.r4>.c8,
+	.r4>.c10,
+	.r12>.c6,
+	.r12>.c8
+	.r12>.c10,
+	.r12b>.c6,
+	.r12b>.c8,
+	.r12b>.c10{
+		width: 13%;
+	}
+
+	.r4>.c1>.BodyText>span,
+	.r4>.c2>.BodyText>span,
+	.r12>.c1>.BodyText>span,
+	.r12>.c2>.BodyText>span,
+	.r12b>.c1>.BodyText>span,
+	.r12b>.c2>.BodyText>span
+	{
+	color: #262626;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	text-align:left;
+	}
+
+	/*Row 5*/
+	/*Row 6*/
+	/*Row 18*/
+	/*Row 19*/
+	/*Row 20*/
+	/*Row 21*/
+	/*Row 24*/
+	/*Row 25*/
+	/*Row 26*/
+	/*Row 27*/
+	.r5, .r6,
+	.r18, .r19,
+	.r20, .r21,
+	.r24, .r25,
+	.r26, .r27
+	{
+        height: 50px;
+    }
+
+	.r5 > td,
+	.r6 > td,
+	.r18 > td,
+	.r19 > td,
+	.r20 > td,
+	.r21 > td,
+	.r24 > td,
+	.r25 > td,
+	.r26 > td,
+	.r27 > td{
+		border:1.0pt solid black; /*all columns of row1 will get borders*/
+		padding: 10px 5px 10px 5px;
+	}
+
+	.r5>.c1,
+	.r6>.c1,
+	.r18>.c1,
+	.r19>.c1,
+	.r20>.c1,
+	.r21>.c1,
+	.r24>.c1,
+	.r25>.c1,
+	.r26>.c1,
+	.r27>.c1{
+		width:3%;
+	}
+	.r5>.c2,
+	.r6>.c2,
+	.r18>.c2,
+	.r19>.c2,
+	.r20>.c2,
+	.r21>.c2,
+	.r24>.c2,
+	.r25>.c2,
+	.r26>.c2,
+	.r27>.c2{
+		width:25%;
+	}
+	.r5>.c3,
+	.r6>.c3,
+	.r18>.c3,
+	.r19>.c3,
+	.r20>.c3,
+	.r21>.c3,
+	.r24>.c3,
+	.r25>.c3,
+	.r26>.c3,
+	.r27>.c3{
+		width:3%;
+	}
+	.r5>.c4,
+	.r6>.c4,
+	.r18>.c4,
+	.r19>.c4,
+	.r20>.c4,
+	.r21>.c4,
+	.r24>.c4,
+	.r25>.c4,
+	.r26>.c4,
+	.r27>.c4{
+		width:6%; 
+	}
+	.r5>.c5, 
+	.r5>.c7,
+	.r5>.c9,
+	.r6>.c5, 
+	.r6>.c7,
+	.r6>.c9,
+	.r18>.c5, 
+	.r18>.c7,
+	.r18>.c9,
+	.r19>.c5, 
+	.r19>.c7,
+	.r19>.c9,
+	.r20>.c5, 
+	.r20>.c7,
+	.r20>.c9,
+	.r21>.c5, 
+	.r21>.c7,
+	.r21>.c9,
+	.r24>.c5, 
+	.r24>.c7,
+	.r24>.c9,
+	.r25>.c5, 
+	.r25>.c7,
+	.r25>.c9,
+	.r26>.c5, 
+	.r26>.c7,
+	.r26>.c9,
+	.r27>.c5, 
+	.r27>.c7,
+	.r27>.c9
+	{
+		width: 8%;
+	}
+	.r5>.c6, 
+	.r5>.c8,
+	.r5>.c10,
+	.r6>.c6, 
+	.r6>.c8,
+	.r6>.c10,
+	.r18>.c6, 
+	.r18>.c8,
+	.r18>.c10,
+	.r19>.c6, 
+	.r19>.c8,
+	.r19>.c10,
+	.r20>.c6, 
+	.r20>.c8,
+	.r20>.c10,
+	.r21>.c6, 
+	.r21>.c8,
+	.r21>.c10,
+	.r24>.c6, 
+	.r24>.c8,
+	.r24>.c10,
+	.r25>.c6, 
+	.r25>.c8,
+	.r25>.c10,
+	.r26>.c6, 
+	.r26>.c8,
+	.r26>.c10,
+	.r27>.c6, 
+	.r27>.c8,
+	.r27>.c10{
+		width: 13%;
+	}
+
+	.r5>.c1>.BodyText>span,
+	.r5>.c2>.BodyText>span,
+	.r5>.c3>.BodyText>span,
+	.r5>.c4>.BodyText>span,
+	.r6>.c1>.BodyText>span,
+	.r6>.c2>.BodyText>span,
+	.r6>.c3>.BodyText>span,
+	.r6>.c4>.BodyText>span,
+	.r18>.c1>.BodyText>span,
+	.r18>.c2>.BodyText>span,
+	.r18>.c4>.BodyText>span,
+	.r19>.c1>.BodyText>span,
+	.r19>.c2>.BodyText>span,
+	.r19>.c4>.BodyText>span,
+	.r20>.c1>.BodyText>span,
+	.r20>.c2>.BodyText>span,
+	.r20>.c4>.BodyText>span,
+	.r21>.c1>.BodyText>span,
+	.r21>.c2>.BodyText>span,
+	.r21>.c4>.BodyText>span,
+	.r22>.c4>.BodyText>span,
+	.r24>.c1>.BodyText>span,
+	.r24>.c2>.BodyText>span,
+	.r24>.c4>.BodyText>span,
+	.r25>.c1>.BodyText>span,
+	.r25>.c2>.BodyText>span,
+	.r25>.c4>.BodyText>span,
+	.r26>.c1>.BodyText>span,
+	.r26>.c2>.BodyText>span,
+	.r26>.c4>.BodyText>span,
+	.r27>.c1>.BodyText>span,
+	.r27>.c2>.BodyText>span,
+	.r27>.c4>.BodyText>span
+	{
+	color: #262626;
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+	text-align:left;
+	}
+
+/*Row 7*/
+/*Row 8*/
+/*Row 13*/
+/*Row 14*/
+/*Row 15*/
+/*Row 16*/
+/*Row 22*/
+.r7,.r8, .r13, .r14, .r15, .r16, .r22{
+	height: 50px;
+}
+
+.r7 > td,
+.r8 > td,
+.r13 > td,
+.r14 > td,
+.r15 > td,
+.r16 > td,
+.r22 > td{
+	border:1.0pt solid black; /*all columns of row1 will get borders*/
+	padding: 10px 5px 10px 5px;
+}
+
+.r7>.c1,
+.r8>.c1,
+.r13>.c1,
+.r14>.c1,
+.r15>.c1,
+.r16>.c1,
+.r22>.c1{
+	width:3%;
+}
+.r7>.c2,
+.r8>.c2,
+.r13>.c2,
+.r14>.c2,
+.r15>.c2,
+.r16>.c2,
+.r22>.c2{
+	width:25%;
+}
+.r7>.c3,
+.r8>.c3,
+.r13>.c3,
+.r14>.c3,
+.r15>.c3,
+.r16>.c3,
+.r22>.c3{
+	width:3%;
+}
+.r7>.c4,
+.r8>.c4,
+.r13>.c4,
+.r14>.c4,
+.r15>.c4,
+.r16>.c4,
+.r22>.c4{
+	width:6%; 
+}
+.r7>.c5, 
+.r7>.c7,
+.r7>.c9,
+.r8>.c5,
+.r8>.c7,
+.r8>.c9,
+.r13>.c5, 
+.r13>.c7,
+.r13>.c9,
+.r14>.c5,
+.r14>.c7,
+.r14>.c9,
+.r15>.c5, 
+.r15>.c7,
+.r15>.c9,
+.r16>.c5,
+.r16>.c7,
+.r16>.c9,
+.r22>.c5,
+.r22>.c7,
+.r22>.c9{
+	width: 8%;
+}
+.r7>.c6, 
+.r7>.c8,
+.r7>.c10,
+.r8>.c6,
+.r8>.c8,
+.r8>.c10,
+.r13>.c6, 
+.r13>.c8,
+.r13>.c10,
+.r14>.c6,
+.r14>.c8,
+.r14>.c10,
+.r15>.c6, 
+.r15>.c8,
+.r15>.c10,
+.r16>.c6,
+.r16>.c8,
+.r16>.c10,
+.r22>.c6,
+.r22>.c8,
+.r22>.c10{
+	width: 13%;
+}

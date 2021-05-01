@@ -1,0 +1,164 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	height: 100%;
+    width: 100%;
+}
+
+
+header{
+    height: 15%; /*out of 100%*/
+    width: 100vw;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center; /*align contents in center vertically*/
+    justify-content: space-between; /*both parts will go to extreme ends*/
+    color: #fff; /*font color form flatuicolors.com*/
+    background-color: #009879; /*light black bg color to nav tag*/
+}
+
+header .logo{
+    display: block;
+    width: 40vw;
+    height: 70px;
+    background: url(logo.png) top left no-repeat;
+    background-size: 100% 100%;
+
+ /*   background-color: blue;*/
+}
+
+@media screen and (max-width: 783px) {   
+    header .logo{
+    	display: block;
+        width: 12vw;
+        height: 60px;
+        background: url(logo2.png) top left no-repeat;
+        background-size: 100% 100%;
+    } 
+
+}
+
+header .admin-logout{
+    width: 20%;
+    height: 50px;
+  /*  background-color: aqua;*/
+}
+
+header .admin-logout .button-container{
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center; /*align contents in center vertically*/
+    justify-content: space-around;
+ /*   background-color: blueviolet;*/
+}
+
+header .admin-logout .button-container .admin-button{
+ /*  background-color: #EC692D;*/
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    border-color: black;
+    border-radius: 5px;
+    
+}
+
+header .admin-logout .button-container .logout-button{
+ /*   background-color:  #EC692D;*/
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    border-color:black;
+    border-radius: 5px;
+}
+
+main {
+	background-color: #fafafa;
+    width: 100%;
+	height: 100%;
+	padding: 20px 30px;
+}
+
+table{
+    width: 100%;
+    min-height: 300px;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+table th{
+    background-color: #009879;
+    color: #fff;
+    font-size: 1em;
+}
+table th,
+table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+table th,
+table td{
+    border-right: 1px solid #b8b6b6;
+}
+table tr {
+    border: 1px solid #b8b6b6;
+}
+
+table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+table tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+
+
+/* button */
+button {
+    cursor: pointer;
+    position: absolute;
+    right: 32px;
+    font-size: 20px;
+    height: 60px;
+    width: 280px;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color:#0b6654;
+    padding: 8px 8px;
+    box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+
+  }
+  
+  button:hover {
+    filter: brightness(110%);
+  }
+  
+  button:active {
+    transform: translate(0, 0.3rem);
+    box-shadow: 0 0.1rem rgba(255, 255, 255, 0.65);
+  }
+  
+  @media screen and (max-width: 1100px) {   
+    button{
+        font-size: 18px;
+
+    } 
+
+}
