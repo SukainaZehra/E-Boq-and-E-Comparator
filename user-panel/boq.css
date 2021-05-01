@@ -1,0 +1,371 @@
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      
+     body {
+        margin: 10px;
+        font-family: Arial;
+		
+      }
+
+      table{
+      border: none;
+         border-collapse: collapse;
+      }
+
+    table > td{
+          border: none;
+      }
+
+      .thead-r1-c1
+	{      
+	
+	font-size:9.0pt;
+	font-weight:700;
+	font-family:Arial, sans-serif;
+	
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom: .1pt solid grey;
+    border-left:none;
+}
+    
+      .thead-r2-c1
+	{
+	font-size:8.0pt;
+	font-family:Arial, sans-serif;
+	text-align:left;
+    vertical-align:justify;}
+    
+    .font21
+	{color:black;
+	font-size:8.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	}
+
+    .font22
+	{color:black;
+	font-size:8.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;}
+
+      .thead-r3-c1 {
+        margin: 14px 0px;
+        line-height: 18px;
+        font-size: 19px;
+        font-family: "Arial Black", sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: -0.5pt;
+      }
+
+      /*tbody*/
+
+	  /*Rows will take care of its height*/
+     .r1, .r2, .r3a, .r3, .r3c, .r4, .r5, .r5b, .r6, .r7, .r8, .r9, .r10,
+	 .r11, .r12, .r13, .r14, .r15, .r15b, .r16, .r17, .r18, .r19, .r20{
+		 border-left:1px solid black;
+		 border-right: 1px solid black;
+		 border-top: 1px solid black;
+	 }
+
+	 .r20{
+		border-bottom: 1px solid black;
+	 }
+
+
+      .r1, .r2, .r5, .r5b ,.r11, .r16 {
+		background: #8eaadb;
+		height: 45px;
+		vertical-align:middle;
+		
+	  }
+
+	  .r1 > td , .r2 > td, .r5>td, .r5b>td, .r11>td, .r16>td {
+		color:white;
+		font-size:10px;
+		font-weight:700;
+		font-family:Arial, sans-serif;
+		text-align:center;
+		white-space:normal;
+	  }
+
+	  .r3a{
+		height: 100px;
+		vertical-align:middle;
+	  }
+
+	  .r3, .r3c{
+		height: 50px;
+		vertical-align:middle;
+	  }
+
+	  .r4, .r8, .r9, .r10, .r12, .r13, .r14, .r15, .r15b, .r17, .r18, .r19, .r20{
+		height: 50px;
+		vertical-align:middle;
+	  }
+
+	  .r6,.r7{
+		  height: 50px;
+		  vertical-align: middle;
+	  }
+
+	  .r3a > .c1 > .BodyText > span,
+	  .r3a > .c2 > .BodyText > span,
+	  .r3 > .c1 > .BodyText > span,
+	  .r3 > .c2 > .BodyText > span,
+	  .r3 > .c3 > .BodyText > span,
+	  .r3 > .c4 > .BodyText > span,
+	  .r3c> .c1 > .BodyText > span,
+	  .r3c > .c2 > .BodyText > span,
+	  .r3c > .c3 > .BodyText > span,
+	  .r3c > .c4 > .BodyText > span,
+	  .r6 > .c1 > .BodyText > span,
+	  .r6 > .c2 > .BodyText > span,
+	  .r6 > .c3 > .BodyText > span,
+	  .r6 > .c4 > .BodyText > span,
+	  .r7 > .c1 > .BodyText > span,
+	  .r7 > .c2 > .BodyText > span,
+	  .r7 > .c3 > .BodyText > span,
+	  .r7 > .c4 > .BodyText > span,
+	  .r12 > .c1 > .BodyText > span,
+	  .r12 > .c2 > .BodyText > span,
+	  .r12 > .c4 > .BodyText > span,
+	  .r13 > .c1 > .BodyText > span,
+	  .r13 > .c2 > .BodyText > span,
+	  .r13 > .c4 > .BodyText > span,
+	  .r14 > .c1 > .BodyText > span,
+	  .r14 > .c2 > .BodyText > span,
+	  .r14 > .c4 > .BodyText > span,
+	  .r15 > .c1 > .BodyText > span,
+	  .r15 > .c2 > .BodyText > span,
+	  .r15 > .c4 > .BodyText > span,
+	  .r15b > .c4 > .BodyText > span,
+	  .r17 > .c1 > .BodyText > span,
+	  .r17 > .c2 > .BodyText > span,
+	  .r17 > .c4 > .BodyText > span,
+	  .r18 > .c1 > .BodyText > span,
+	  .r18 > .c2 > .BodyText > span,
+	  .r18 > .c4 > .BodyText > span,
+	  .r19 > .c1 > .BodyText > span,
+	  .r19 > .c2 > .BodyText > span,
+	  .r19 > .c4 > .BodyText > span,
+	  .r20 > .c1 > .BodyText > span,
+	  .r20 > .c2 > .BodyText > span,
+	  .r20 > .c4 > .BodyText > span
+	   {
+		color: #262626;
+		font-size: 12.5px;
+		font-family: Arial, sans-serif;
+		line-height: 100%;
+	  }
+
+	input[type="number"] {
+        outline: none;
+		border: none;
+		-moz-appearance: textfield;
+		color: #262626;
+		font-size: 12.5px;
+		font-family: Arial, sans-serif;
+		line-height: 100%;
+		text-align: center;
+	  }
+	  input[type="text"] {
+        outline: none;
+		border: none;
+		-moz-appearance: textfield;
+		color: #262626;
+		font-size: 12.5px;
+		font-family: Arial, sans-serif;
+		line-height: 100%;
+		text-align: center;
+	  }
+
+	  .r3>.c5>input[type="number"],  
+	  .r3>.c6>input[type="text"], 
+	  .r3c>.c5>input[type="number"],  
+	  .r3c>.c6>input[type="text"],
+	  .r6>.c5>input[type="number"], 
+	  .r7>.c5>input[type="number"],
+	  .r12>.c3>input[type="number"],
+	  .r13>.c3>input[type="number"],
+	  .r14>.c3>input[type="number"],
+	  .r15>.c3>input[type="number"],
+	  .r17>.c3>input[type="number"],
+	  .r18>.c3>input[type="number"],
+	  .r19>.c3>input[type="number"],
+	  .r20>.c3>input[type="number"]
+	  {
+		background-color: #d3d3d3 ;
+	  }
+
+	  input::-webkit-outer-spin-button,
+	input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+	  
+	  /*Columns will take care of cell's width */
+	  .r1>.c1, .r2>.c1, .r5>.c1, .r5b>.c1, .r11>.c1, .r16>.c1 {
+		  width: 7%;
+		  padding: 0 5px 0 5px;
+	  }
+	  .r1>.c3, .r1>.c4, .r5>.c3, .r5>.c4{
+		 width: 10%;
+		 padding: 0 5px 0 5px;
+	 }
+	 .r1>.c2,.r5>.c2{
+		 width: 33%;
+		 padding: 0 5px 0 5px;
+	 }
+
+	 .r1>.c5,.r1>.c6,.r1>.c7,.r5>.c5,.r1>.c6{
+		 width: 13.3%;
+		 padding: 0 5px 0 5px;
+	 }
+
+	.r2 > .c2, .r5b > .c2, .r11>.c2, .r16>.c2 {
+		text-align: left;
+		padding-left: 5px;
+	}
+
+	.r3a>.c1, .r3>.c1,.r3c>.c1, .r6>.c1, .r7>.c1, .r12>.c1, .r13>.c1, .r14>.c1,.r15>.c1, .r15b>.c1,.r17>.c1, .r18>.c1, .r19>.c1,.r20>.c1{
+		width: 7%;
+		padding: 10px 5px 10px 5px;
+
+	}
+	.r3>.c2,.r3a>.c2,.r3c>.c2, .r6>.c2,.r7>.c2, .r12>.c2, .r13>.c2, .r14>.c2, .r15>.c2,.r15b>.c2,.r17>.c2, .r18>.c2, .r19>.c2, .r20>.c2{
+		width: 33%;
+		padding: 13px 5px 10px 5px;
+	}
+	.r3>.c3, .r3>.c4, .r3a>.c3, .r3a>.c4, .r3c>.c3, .r3c>.c4,.r6>.c3, .r6>.c4,.r7>.c3, .r7>.c4, .r12>.c3, .r12>.c4, .r13>.c3, .r13>.c4,.r14>.c3, .r14>.c4,.r15>.c3, .r15>.c4, .r15b>.c3, .r15b>.c4,
+	.r17>.c3, .r17>.c4, .r18>.c3, .r18>.c4,.r19>.c3, .r19>.c4,.r20>.c3, .r20>.c4{
+		width: 10%;
+		padding: 10px 5px 10px 5px;
+	}
+	.r3>.c5,.r3>.c6,.r3>.c7,.r3a>.c5,.r3a>.c6,.r3a>.c7, .r3c>.c5,.r3c>.c6,.r3c>.c7,.r6>.c5,.r6>.c6,.r7>.c5,.r7>.c6, .r12>.r5, .r12>.r6, .r13>.r5, .r13>.r6, .r14>.r5, .r14>.r6, .r15>.r5, .r15>.r6, 
+	.r15b>.r5, .r15b>.r6,
+	.r17>.r5, .r17>.r6, .r18>.r5, .r18>.r6, .r19>.r5, .r19>.r6, .r20>.r5, .r20>.r6{
+		 width: 13.3%;
+		 padding: 10px 5px 10px 12px;
+	}
+
+	.r3>.c5, .r3>.c6,
+	.r3c>.c5, .r3c>.c6,
+	.r6>.c5,
+	.r7>.c5,
+	.r12>.c3,
+	.r13>.c3,
+	.r14>.c3,
+	.r15>.c3,
+	.r17>.c3,
+	.r18>.c3,
+	.r19>.c3,
+	.r20>.c3
+	{
+		background-color: #d3d3d3;
+	}
+
+	.r4>.c2, .r8>.c2, .r9>.c2, .r10>.c2 {
+		color: #262626;
+		font-size: 13px;
+		font-family: Arial, sans-serif;
+		line-height: 100%;
+		text-align: right;
+		padding: 10px 5px 10px 5px;
+	}
+	.r4>.c3, .r8>.c3, .r9>.c3, .r10>.c3{
+		width: 13.3%;
+		color: #262626;
+		font-size: 13px;
+		font-family: Arial, sans-serif;
+		line-height: 100%;
+		text-align: center;
+		padding: 10px 5px 10px 5px;
+	}
+
+	.xl90
+	{
+	font-size:7.0pt;
+	font-family:Arial, sans-serif;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+
+	.xl91
+	{
+	font-size:7.0pt;
+	font-family:Arial, sans-serif;
+	
+	text-align:right;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:none;}
+
+	.font18
+	{color:black;
+	font-size:7.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	}
+	.font19
+	{color:black;
+	font-size:7.0pt;
+	font-weight:700;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Arial, sans-serif;
+	}
+
+	/*For submit btn*/
+
+.submit-btn
+{
+	width: 140px;
+	height: 40px;
+  
+	background: dodgerblue;
+	border-radius: 6px;
+  
+	color: white;
+	font-size: 20px;
+	text-align: center;
+  
+	border-style: none;
+	outline:none;
+  }
+  
+  .draft-btn {
+	width: 140px;
+	height: 40px;
+  
+	background: dodgerblue;
+	border-radius: 6px;
+  
+	color: white;
+	font-size: 18px;
+	text-align: center;
+  
+	border-style: none;
+	outline:none;
+  }
+  .submit-btn:hover{
+	cursor: pointer;
+  }
+
+  .draft-btn:hover{
+	cursor: pointer;
+  }
