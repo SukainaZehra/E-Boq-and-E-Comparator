@@ -1,5 +1,5 @@
 BOQ i.e Bill of quantities is a document used in tendering in the construction industry in which materials, parts, and labor (and their costs) are itemized.
-The purpose of this porject is to digitize the old traditional format of BOQs to a completely paperless web forms.
+The purpose of this project is to digitize the old traditional format of BOQ to a completely paperless web form.
 There are 2 stakeholders in the project:
 1. A user who can fill the web based BOQ by browsing to https://fnd1234.000webhostapp.com/ 
 2. An admin who can view, download and manage all submissions by different clients and can also generate a Technical comparator based on the responses at https://fnd1234.000webhostapp.com/adminlogin.php
